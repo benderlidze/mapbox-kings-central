@@ -233,7 +233,7 @@
 
         .noUi-tooltip {
             border: 0px !important;
-            color: #FC360C;
+            color: white;
             font-size: 24px;
             font-weight: bold;
             background: none;
@@ -286,7 +286,7 @@
         .sliderdiv {
             align-self: center;
             justify-self: center;
-            width: 270px;
+            width: 450px;
         }
 
         #roundtab {
@@ -1292,17 +1292,17 @@
                         const sliderId = `${new Date().getTime()}_${filterVarible}`;
 
                         document.getElementById(layerDiv).insertAdjacentHTML('beforeend', `
-                        <div style="border:0px solid red; display:flex;width:270px;margin: 0px 45px; justify-content: center;">
+                        <div style="border:0px solid red; display:flex;width:612px;margin: 0px 45px; justify-content: center;">
                             <div style="position:absolute;bottom:5px;color:white">
                                 ${label}
                             </div>
-                            <div style="position:relative; top:40%; left:-45px; color:white">
+                            <div style="position:relative; top:45%; left:-45px; color:white">
                                 MIN
                             </div>
                             <div class="sliderdiv">
                                 <div id="${sliderId}"></div>
                             </div>
-                            <div style="position:relative; top:40%; right:-25px; color:white">
+                            <div style="position:relative; top:45%; right:-25px; color:white">
                                 MAX
                             </div>
                         </div>
