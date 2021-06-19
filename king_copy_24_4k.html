@@ -1520,7 +1520,9 @@
                 const data = json.filter(i => i['Lot_Polygon_Active'].toLowerCase() === "true") //filter by Lot_Polygon_Active
 
                 let bounds = new mapboxgl.LngLatBounds();
-                const pins = data.map(i => {
+                const pins = data
+                .filter(i => i['Lot_Status'].toLowerCase() === "sold")
+                .map(i => {
 
                     const latlng = [+i.Lot_Longitude, +i.Lot_Latitude];
                     bounds.extend(latlng)
